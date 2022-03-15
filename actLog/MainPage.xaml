@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="actLog.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" CornerRadius="0">
+            <Label Text="Login Activity" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <StackLayout Orientation="Horizontal">
+            <Label Text="First Name" FontSize="Default"/>
+            <Entry Placeholder="First Name" />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">    
+            <Label Text="Last Name" FontSize="Default"/>
+            <Entry Placeholder="Last Name"/>
+        </StackLayout>
+
+        <Button x:Name="btn_submit"  Text="Submit" BackgroundColor="#2196F3" TextColor="White" Margin="30 50"/>
+        <Button x:Name="btn_register" Text="Register" BackgroundColor="#2196F3" TextColor="White" Margin="30 50"/>
+        
+    </StackLayout>
+
+</ContentPage>
