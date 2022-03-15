@@ -3,24 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="actLog.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" CornerRadius="0">
-            <Label Text="Login Activity" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
+    <StackLayout BackgroundColor="#808080" Padding="10, 50">
 
-        <StackLayout Orientation="Horizontal">
-            <Label Text="First Name" FontSize="Default"/>
+        <StackLayout Orientation="Horizontal" Margin="30">
+            <Label Text="First Name" FontSize="Default" TextColor="White"/>
             <Entry Placeholder="First Name" />
         </StackLayout>
 
-        <StackLayout Orientation="Horizontal">    
-            <Label Text="Last Name" FontSize="Default"/>
-            <Entry Placeholder="Last Name"/>
+        <StackLayout Orientation="Horizontal" Margin="30">    
+            <Label Text="Last Name" FontSize="Default" TextColor="White" />
+            <Entry Placeholder="Last Name" />
         </StackLayout>
 
-        <Button x:Name="btn_submit"  Text="Submit" BackgroundColor="#2196F3" TextColor="White" Margin="30 50"/>
-        <Button x:Name="btn_register" Text="Register" BackgroundColor="#2196F3" TextColor="White" Margin="30 50"/>
-        
+        <StackLayout Orientation="Vertical" Margin="10">
+            <Button x:Name="btn_submit"  Text="Submit" TextTransform="Uppercase" BackgroundColor="#2196F3" TextColor="White" Margin="20"/>
+            <Button x:Name="btn_register" Text="Register" TextTransform="Uppercase" BackgroundColor="#2196F3" TextColor="White" Margin="20"/>
+        </StackLayout>
+
     </StackLayout>
 
 </ContentPage>
